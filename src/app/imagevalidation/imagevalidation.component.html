@@ -1,0 +1,10 @@
+
+<form>
+        <div class="form-group">
+          <label for="imageUploadFile">Click to Upload Image here</label>
+          <input type="file" multiple id="imageUploadFile" #imageproperties  (change)="onFileChanged($event)" >          
+          <small id="imageHelpInfo" class="form-text text-muted">We'll never share your Images with anyone else.</small>
+          <button (click)="uploadImage(imageproperties)" class="btn btn-primary" > Upload </button>
+        </div>
+
+</form>

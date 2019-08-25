@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<div class="container-fluid">
+  <h2>Registrtion Form</h2>
+  <form [formGroup]="userFormData">
+      <div class="form-group">
+        <label class="" > Username   {{userFormData.get('username').untouched}}</label>
+      
+        <input type="text" 
+                formControlName="username"  class="form-control">
+                <small [class.d-none]="true" class="text-danger" > Username recuired </small>
+      </div>
+      <div class="form-group">
+        <label class="" > Password </label>
+        <input type="password" formControlName="password"  class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="" > Confirm Password </label>
+        <input type="password" formControlName="confirmpassword"  class="form-control">
+      </div>
+      <div class="form-group">
+          <label class="" > Email Id </label>
+          <input type="email" formControlName="email"  class="form-control">
+        </div>
+      <div formGroupName="billingAddress" >
+                <div class="form-group">
+                <label class="" > AddressLine1 </label>
+                <input type="text" formControlName="addressline1"  class="form-control">
+                </div>
+                <div class="form-group">
+                <label class="" > City </label>
+                <input type="text" formControlName="city"  class="form-control">
+                </div>
+                <div class="form-group">
+                <label class="" > State </label>
+                <input type="text" formControlName="state"  class="form-control">
+                </div>  
+                <div class="form-group">
+                <label class="" > Zipcode </label>
+                <input type="number" formControlName="zipcode"  class="form-control">
+                </div>  
+      </div>      
+      <button class="btn btn-primary">Submit</button>
+      <button class="btn" (click)="addValidData()" > Add values </button>
+  </form>
+ 
+  <pre>{{userFormData.value | json}}</pre>
+
+</div>
+-->
+<!--
+<app-imagevalidation> </app-imagevalidation>-->
+<app-lottery></app-lottery>
+<router-outlet></router-outlet>
